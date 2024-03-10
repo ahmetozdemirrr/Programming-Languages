@@ -1,0 +1,8 @@
+(def sum number1 number2 (+ number1 number2))
+(sum 3b4 3b3)
+(* 4b6 6b5)
+(/ 4b5 4b5)
+(def mult v1 v2 (* v1 v2))
+(+ 3b9 (mult 2b3 2b3))
+(+ (* 3b5 (- 5b3 4b3)) (+ (+ 3b5 3b5) 3b5))
+(exit)
