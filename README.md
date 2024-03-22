@@ -16,7 +16,7 @@ The codes I wrote here consist of programming assignments given to us in the Pro
 |--------	|-----	|-----	|----	|-----	|
 | Grades 	| 92    | 65	| 80	| 100  	|
 
-The course was given by Prof. Dr. Erkan Zergeroğlu at Gebze Technical University for the Department of Computer Engineering in the Spring 2024.
+The course was given by Dr. Yakup Genç at Gebze Technical University for the Department of Computer Engineering in the Fall 2024.
 
 Links:
 * [Programming Languages](https://abl.gtu.edu.tr/ects/?duzey=ucuncu&modul=ders_bilgi_formu&dno=B%C4%B0L%20341&bolum=104&tip=lisans&dil=tr)
