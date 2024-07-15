@@ -1,31 +1,31 @@
 ; ****************************** CFG TEMPLATES ******************************
-; *																			*
-; *	 non-terminals :														*
-; *																			*
-; *	 $START  :=  ɛ | $START $INPUT ;										*
-; *																			*
-; *	 $INPUT  :=  $EXIT | $EXP | $DEF_FUNC ;									*
-; *																			*
-; *	 $EXIT   :=  OP_OP KW_EXIT OP_CP ;										*
-; *																			*
+; *													*
+; *	 non-terminals :										*
+; *													*
+; *	 $START  :=  ɛ | $START $INPUT ;								*
+; *													*
+; *	 $INPUT  :=  $EXIT | $EXP | $DEF_FUNC ;								*
+; *													*
+; *	 $EXIT   :=  OP_OP KW_EXIT OP_CP ;								*
+; *													*
 ; *	 $EXP    :=    OP_OP OP_PLUS    EXP EXP OP_CP ->						*
-; *			  	 | OP_OP OP_MINUS   EXP EXP OP_CP  ; ARITMETIC OPERATIONS	*
-; *			  	 | OP_OP OP_DIV     EXP EXP OP_CP							*
-; *			  	 | OP_OP OP_MULT    EXP EXP OP_CP  ^						*
-; *			  	 | OP_OP IDENTIFIER EXP EXP OP_CP ->						*
-; *			  	 | OP_OP IDENTIFIER     EXP OP_CP	; FUNCTION CALL 		*
-; *			  	 | OP_OP IDENTIFIER         OP_CP  ^						*
-; *			  	 | VALUEF 													*
-; *			     ;															*
-; *																			*
-; *	 $DEF_FUNC :=  OP_OP KW_DEF IDENTIFIER IDENTIFIER IDENTIFIER EXP OP_CP	*
-; *			     | OP_OP KW_DEF IDENTIFIER IDENTIFIER            EXP OP_CP	*
-; *			     | OP_OP KW_DEF IDENTIFIER 					     EXP OP_CP	*
-; *				 ;															*
-; *																			*
-; *   terminals :  OP_OP | OP_CP | OP_MINUS | OP_PLUS | OP_DIV | OP_MULT |	*
+; *		     | OP_OP OP_MINUS   EXP EXP OP_CP  ; ARITMETIC OPERATIONS				*
+; *		     | OP_OP OP_DIV     EXP EXP OP_CP							*
+; *		     | OP_OP OP_MULT    EXP EXP OP_CP  ^						*
+; *		     | OP_OP IDENTIFIER EXP EXP OP_CP ->						*
+; *		     | OP_OP IDENTIFIER     EXP OP_CP	; FUNCTION CALL 		                *
+; *		     | OP_OP IDENTIFIER         OP_CP  ^						*
+; *		     | VALUEF 										*
+; *		     ;											*
+; *													*
+; *	 $DEF_FUNC :=  OP_OP KW_DEF IDENTIFIER IDENTIFIER IDENTIFIER EXP OP_CP				*
+; *		     | OP_OP KW_DEF IDENTIFIER IDENTIFIER EXP OP_CP					*
+; *		     | OP_OP KW_DEF IDENTIFIER EXP OP_CP						*
+; *		     ;											*
+; *													*
+; *      terminals :  OP_OP | OP_CP | OP_MINUS | OP_PLUS | OP_DIV | OP_MULT |				*
 ; *  				KW_DEF | KW_EXIT | VALUEF | IDENTIFIER					*
-; *																			*
+; *													*
 ; ***************************************************************************
 
 (defconstant *output-file-name* "output.txt") ; sonuçların yazılacağı dosya
